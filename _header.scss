@@ -1,0 +1,22 @@
+/* header styles */ 
+
+header {
+    background-image: url(../images/donuts3.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        @include secondaryFont(25px);
+    }
+    h1 {
+        @include primaryFont(50px);
+    }
+
+    h1, h2 {
+        margin: 10px 0;
+        color: darken($primaryColor, 50);
+    }
+}

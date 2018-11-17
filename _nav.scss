@@ -1,0 +1,20 @@
+/* nav styles */
+
+nav {
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 20px 10px;
+    }
+    li {
+        list-style-type: none;
+        a {
+            @include secondaryFont(16px);
+            text-decoration: none;
+            padding: 10px;
+            &:hover {
+                color: tomato;
+            }
+        }
+    }
+}

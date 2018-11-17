@@ -1,0 +1,26 @@
+/* global styles */ 
+
+// variables
+$primaryColor: #373636;
+
+// mixins
+@mixin secondaryFont($fontSize) {
+    font-size: $fontSize;
+    text-transform: uppercase;
+    color: $primaryColor;
+    font-family: "Montserrat", sans-serif;
+}
+
+@mixin primaryFont($fontSize) {
+    font-size: $fontSize;
+    font-family: "Playfair Display", serif;
+    color: $primaryColor;
+} 
+
+// layout
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+    max-width: 1080px;
+}

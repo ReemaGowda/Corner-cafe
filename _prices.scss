@@ -1,0 +1,30 @@
+/* section.prices styles*/
+section.prices {
+    text-align: center;
+    h2 {
+        @include primaryFont(30px);
+    }
+    h3 {
+        @include secondaryFont(16px);
+    }
+
+    p {
+        @include primaryFont(16px)
+    }
+    .price-boxes {
+        display: flex;
+
+
+       
+    }
+    .price {
+        border: 3px solid $primaryColor;
+        width: 33.33%;
+        padding: 20px;
+        margin: 20px;
+    }
+    .special {
+        @extend .price;
+        border: 3px solid tomato;
+    }
+}
